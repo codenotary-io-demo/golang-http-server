@@ -1,6 +1,8 @@
 version: 2
 jobs:
   build:
+    docker:
+      - image: golang:1.13.4-stretch
     environment:
       TEST_RESULTS: /tmp/test-results
 
